@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-import "github.com/isollaa/magicsoft_test/lala"
+import "github.com/isollaa/magicsoft_test/sort"
 
 type Comparator interface {
 	Compare(int, int) bool
@@ -34,9 +34,8 @@ func BubbleSort(numbers []int, c Comparator) []int {
 }
 
 func main() {
-	var svc lala.DataManager
-
-	svc = &lala.Str{
+	var svc sort.DataManager
+	svc = &sort.Str{
 		V:   []string{"a", "f", "d", "r", "t", "e"},
 		ASC: false,
 	}
